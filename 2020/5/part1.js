@@ -32,7 +32,7 @@ function puzzle(input) {
 	return seatIDs;
 }
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const seats = puzzle(input);
 	const answer = seats.sort((a, b) => b - a)[0];
 	console.log(answer);

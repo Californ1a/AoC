@@ -22,7 +22,7 @@ function puzzle(input) {
 	return indicies;
 }
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const answers = puzzle(input);
 	answers.forEach((answer, i) => {
 		const mult = answer.num1 * answer.num2;

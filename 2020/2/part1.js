@@ -21,7 +21,7 @@ function puzzle(input) {
 	return sum;
 }
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const answer = puzzle(input);
 	console.log(answer);
 });

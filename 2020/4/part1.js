@@ -35,7 +35,7 @@ function validateInput(input) {
 	});
 }
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const parsed = parseInput(input);
 	const answers = validateInput(parsed);
 	const answer = answers.reduce((a, v) => ((v) ? a + v : a), 0);

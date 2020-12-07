@@ -13,7 +13,7 @@ function puzzle(input, across, down = 1) {
 	return treeCount;
 }
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const answer = puzzle(input, 3);
 	console.log(answer);
 });

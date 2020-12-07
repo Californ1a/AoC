@@ -80,7 +80,7 @@ function validateKeys(input) {
 	});
 }
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const parsed = parseInput(input);
 	const validInput = validateInput(parsed);
 	const answers = validateKeys(validInput);

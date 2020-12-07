@@ -26,7 +26,7 @@ function puzzle(input) {
 	return ans.reduce((a, v) => a + v);
 }
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const answer = puzzle(input);
 	console.log(answer);
 });

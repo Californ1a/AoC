@@ -22,7 +22,7 @@ function puzzle(input, across, down = 1) {
 
 const func = (i) => (a, d) => puzzle(i, a, d);
 
-readInput("input.txt").then((input) => {
+readInput(__dirname, "input.txt").then((input) => {
 	const p = func(input);
 	const answers = [p(1, 1), p(3, 1), p(5, 1), p(7, 1), p(1, 2)];
 	console.log(answers);
