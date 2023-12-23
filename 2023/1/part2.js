@@ -20,7 +20,6 @@ function getNumbers(input) {
 			for (const num of numStrs) {
 				const strSliced = input.slice(i, num.length + i);
 				// console.log(input, i, num.length, strSliced, strSliced !== num, numberWords[num]);
-				// eslint-disable-next-line no-continue
 				if (strSliced !== num) continue;
 				result.push(numberWords[num]);
 			}

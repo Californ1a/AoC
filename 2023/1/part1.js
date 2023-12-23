@@ -6,13 +6,11 @@ function puzzle(input) {
 		const chars = line.split('');
 		let numStr = '';
 		for (const char of chars) {
-			// eslint-disable-next-line no-continue
 			if (Number.isNaN(parseInt(char, 10))) continue;
 			numStr += char;
 			break;
 		}
 		for (let i = chars.length - 1; i >= 0; i -= 1) {
-			// eslint-disable-next-line no-continue
 			if (Number.isNaN(parseInt(chars[i], 10))) continue;
 			numStr += chars[i];
 			break;

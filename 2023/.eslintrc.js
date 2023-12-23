@@ -19,6 +19,7 @@ module.exports = {
 		'no-tabs': 0,
 		indent: ['error', 'tab'],
 		'linebreak-style': ['error', 'windows'],
+		'no-continue': 0,
 		quotes: ['error', 'single'],
 		'no-restricted-syntax': ['error', {
 			selector: 'ForInStatement',
